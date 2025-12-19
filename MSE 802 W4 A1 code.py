@@ -7,7 +7,7 @@ import sys
 def get_matrix_input(prompt: str) -> np.ndarray | None:
     """Reads matrix data from user input and converts it to a NumPy array, supporting complex numbers."""
     # INSTRUCTION UPDATED: Using 'j' for the imaginary part is necessary for Python's complex() function
-    print(f"\n--- Enter {prompt} (e.g., '1+2j 3; 4 5-6j'). Use 'j' for the imaginary part. ---")
+    print(f"\nEnter {prompt} (e.g., '1+2j 3; 4 5-6j'). Use 'j' for the imaginary part and ';' to separe rows. ")
     
     while True:
         try:
@@ -205,7 +205,7 @@ def display_menu():
     print("2. Subtraction (A - B)")
     print("3. Sequential Multiplication (A @ B)")
     print("4. Transpose (A^T)")
-    print("5. Complex Conjugate (Ā) <--- NEW")
+    print("5. Complex Conjugate (Ā)")
     print("6. Adjoint (Adjugate) (adj(A))")
     print("7. Inverse (A^-1)")
     print("8. Inner Product (Vector Dot Product)")
